@@ -40,6 +40,9 @@ def run_engine():
                 print("... no tables loaded ...")
             else:
                 print(table_name)
+                print("Index on column %s ", db.select_rows)
+                
+
             
         elif command.startswith("copy "):
             # e.g., copy my_table from 'file_name.csv'
